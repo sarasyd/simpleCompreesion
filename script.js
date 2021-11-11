@@ -1,5 +1,4 @@
 function compress(inputValue) {
-
     console.log("Processing " + inputValue);
 
     let i = 0;
@@ -30,15 +29,15 @@ function compress(inputValue) {
 
 var testCases = [
     { case: "abcd", expect: "abcd" },
-    {  case: "aaabbcd", expect:  "a3b2cd" },
-    {  case: "abbbcccdddefg", expect:  "ab3c3d3efg" },
-    {  case: "abbcddefffd", expect:  "ab2cd2ef3d" },
-    {  case: "a", expect:  "a" },
-    {  case: "aa", expect:  "a2" },
-    {  case: "ab", expect:  "ab" }
+    { case: "aaabbcd", expect: "a3b2cd" },
+    { case: "abbbcccdddefg", expect: "ab3c3d3efg" },
+    { case: "abbcddefffd", expect: "ab2cd2ef3d" },
+    { case: "a", expect: "a" },
+    { case: "aa", expect: "a2" },
+    { case: "ab", expect: "ab" }
 ];
 
 testCases.forEach(element => {
     let output = compress(element.case);
-    console.log(output + " " + (output == element.expect ? "PASS" : "FAIL") );
+    console.log(output + " " + (output == element.expect ? "PASS" : "FAIL"));
 });
